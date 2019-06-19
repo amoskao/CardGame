@@ -11,11 +11,11 @@ public class Card
     public int CardNumber { get => _cardnumber;}
     public float CardPosistion { get => _cardposistion; set => _cardposistion = value; }
     public Sprite CardImg { get => _cardimg; }
-    
-    public Card(int num, float loc, Sprite img)
+
+    public Card(int argNum, float argX, Sprite argImg)
     {
-        _cardnumber = num;
-        _cardposistion = loc;
-        _cardimg = img;
+        _cardnumber = argNum;
+        _cardposistion = argX;
+        _cardimg = argImg;
     }
 }
