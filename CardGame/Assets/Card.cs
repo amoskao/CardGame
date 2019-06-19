@@ -20,7 +20,7 @@ public class Card
         _cardposistion = argX;
         _cardimg = argImg;
 
-        //時常在UNITY作的幾件事情 生成 取得位子 給圖片
+        //時常在UNITY作的幾件事情 1.生成 2.取得位子 3.給視覺素材
         GameObject card = new GameObject("卡片"); //unity api 新增遊戲物件(名稱)
         card.AddComponent<SpriteRenderer>();     // 添加元件 泛型方法 <類型>
 
