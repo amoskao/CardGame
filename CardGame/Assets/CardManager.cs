@@ -1,15 +1,21 @@
-﻿using UnityEngine;                                        //引用 unity API
+﻿using UnityEngine;                               //引用 unity API
 
-public class CardManager : MonoBehaviour                  //繼承 MonoBehaviour 可以放在物件上
+public class CardManager : MonoBehaviour         //繼承 MonoBehaviour 可以放在物件上
 {
     public Card cardPlayer, cardPC;
 
-    public Sprite Image9, Image3;
+    public Sprite[] CardImage;
 
-
-    private void Start()                                  // 事件：開始、遊戲開始時執行一次
+    // 事件：開始、遊戲開始時執行一次
+    private void Start()
     {
-        cardPlayer = new Card(10, -5f, Image9);
-        cardPC = new Card(3, 5, Image3);
+        int Pnum = Random.Range(0, 10);
+        int Cnum = Random.Range(0, 10);
+
+        Debug.Log("player:" + Pnum);
+        Debug.Log("COM:" + Cnum);
+
+        cardPlayer = new Card(Pnum, -2, CardImage[Pnum]);
+        cardPC = new Card(Cnum, 2, CardImage[Cnum]);
     }
 }
