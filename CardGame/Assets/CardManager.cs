@@ -43,5 +43,10 @@ private void Start()
         {
             SceneManager.LoadScene("卡片遊戲"); //場景管理 載入場景(使用場景名稱方式)
         }
+
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            Application.Quit();
+        }
     }
 }
