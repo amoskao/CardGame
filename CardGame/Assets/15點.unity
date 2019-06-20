@@ -203,3 +203,63 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &917300297
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 917300299}
+  - component: {fileID: 917300298}
+  m_Layer: 0
+  m_Name: "\u64B2\u514B\u7BA1\u7406\u5668"
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &917300298
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 917300297}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75d04783bb9223643a5e44b7d032ac33, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PokerPlayer: []
+  PokerCOM: []
+  CardImage:
+  - {fileID: 21300000, guid: 3974b3a87e80d63448966bacfda624c3, type: 3}
+  - {fileID: 21300000, guid: a4e09031d7225214ca6d17377cb9b295, type: 3}
+  - {fileID: 21300000, guid: 36d1ade918ad75c4c93610dc9cb1c3fa, type: 3}
+  - {fileID: 21300000, guid: cc04e87674735994fb090f590314b275, type: 3}
+  - {fileID: 21300000, guid: 10f1d5330da1da347b361efbe0233986, type: 3}
+  - {fileID: 21300000, guid: e0a37e4f59e9aa243b383ab027641119, type: 3}
+  - {fileID: 21300000, guid: 927d12ddb6fdb0d44b86d354db53d48b, type: 3}
+  - {fileID: 21300000, guid: 0107b46439d25924794715811d9cdf0f, type: 3}
+  - {fileID: 21300000, guid: ef85d1885948bd847ae1d468d9ed0e97, type: 3}
+  - {fileID: 21300000, guid: 9837799df9f06554184b280ac36c084f, type: 3}
+  - {fileID: 21300000, guid: d249c028ed4228d45acf8774a62cb7b9, type: 3}
+  - {fileID: 21300000, guid: e1f4e035da9339741ae6734650fbd403, type: 3}
+  - {fileID: 21300000, guid: d84130a609bf0fe43b728e905825ac19, type: 3}
+  tip: {fileID: 0}
+--- !u!4 &917300299
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 917300297}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
