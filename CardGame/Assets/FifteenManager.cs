@@ -19,7 +19,7 @@ public class FifteenManager : MonoBehaviour
     {
         if (cardPlayer != null && cardPlayer[1] == null)
         {
-            tipBottom.text = "請按空白鍵發牌";
+            tipBottom.text = "        請按 空白鍵 發牌";
 
             if (Input.GetKeyDown(KeyCode.Space))
             {
@@ -27,9 +27,13 @@ public class FifteenManager : MonoBehaviour
                 Check();
             }
         }
-        if (tipBottom.text == "請按 R 重新發牌" && Input.GetKeyDown(KeyCode.R))
+        if (tipBottom.text == "請按 R 重新發牌 或按 ESC 離開" && Input.GetKeyDown(KeyCode.R))
         {
             SceneManager.LoadScene("15點");
+        }
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            Application.Quit();
         }
     }
     private void Deal(int cardIndex, float cardPosition)
@@ -73,7 +77,7 @@ public class FifteenManager : MonoBehaviour
         {
             tipMiddle.text = "平手";
         }
-        tipBottom.text = "請按 R 重新發牌";
+        tipBottom.text = "請按 R 重新發牌 或按 ESC 離開";
     }
 }
 
